@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: rgb(222, 241, 249);
+
+    
+}
+h1{
+    color:rgb(27, 27, 30);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+}
+h4{
+   font-size: 18px; 
+    background-color: rgb(234, 243, 247);
+}
+form{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-width: 10px;
+    border : 2px solid rgb(187, 177, 177);
+    border-radius: 10px;
+    background-color: rgb(234, 243, 247);
+}
+form .he3{
+    color:rgb(20, 57, 113);
+    font: size 25px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: rgb(234, 243, 247);
+}
+form input {
+    text-align: center;
+    background-color: aliceblue;
+    border: none;
+    border :1px solid rgb(157, 154, 154);
+    border-radius: 4px;
+    width: 190px;
+    height:25px;
+    
+}
+input:hover{
+    background-color: rgb(255, 250, 250);
+    width: 200px;
+    height:26px;
+}
+
+form label{
+    font-style: oblique;
+     background-color: rgb(234, 243, 247);
+   
+    
+}
+span{
+    font: size 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(44, 96, 174);
+     background-color: rgb(234, 243, 247);
+}
+#Gender{
+    height: auto;
+    width :auto;
+     background-color: rgb(234, 243, 247);
+}
+#agree{
+    height: auto;
+    width :auto;
+    text-align: right;
+     background-color: rgb(234, 243, 247);
+}
+#btn{
+    margin-left:925px;
+     font-weight: bold;
+
+}
+#department{
+    height: auto;
+    width :auto;
+    
+}
+select{
+    width: 150px;
+    height:25px;
+    background-color:rgb(238, 243, 248);
+    border-radius: 4px;
+}
+.doc {
+    width: 350px;
+    height: auto;
+    text-align: center;
+
+}
+.doc:hover{
+    width: 360px;
+    height: 27px;
+    text-align: center;
+}
+button{
+      border: none;
+      background-color: rgb(20, 57, 113);
+      color:white;
+      height: 30px;
+      width: 150px;
+      border-radius: 8.5px;
+      margin-left: 800px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      border-top-left-radius: 1px;
+
+ 
+}
+button:hover{
+    background-color: rgb(30, 80, 150);
+    height: 33px;
+    width: 155px;
+}
+
+
+</style>
+
+<body>
+    <h1>Student Registration Form</h1>
+
+ <form class="f">
+    <h3  class="he3"><span>Step 1 of 5:</span> Basic Information</h3>
+
+        <label for= "Fullname">Full Name:</label>
+        <input type="text" required id="Fullname" >
+
+        <label for= "fathername" >Father Name:</label>
+        <input type="text" required id="fathername">
+
+        <label for="date of birth">Date of Birth:</label>
+        <input type="date" required id="date of birth"><br><br>
+         
+        <label for = "cnic" >CNIC/B-form:</label>
+        <input type="text" required id="cnic">
+
+        <label for = "contact">Contact no. :</label>
+        <input type="text" required id= "contact"><br><br>
+
+        <label for = "email" >Email Address:</label>
+        <input type="email" required id="email">
+        
+        <label for= "Gender">Gender:</label>
+        <input type="radio" required name="Gender" id="Gender">Male
+        <input type="radio" required name="Gender" id="Gender">Female 
+
+        <h4>Guardian info.</h4>
+
+        <label for= "Fullname">Full Name:</label>
+        <input type="text" required id="Fullname">
+
+        <label for= "Relationship">Relationship:</label>
+        <select required id="Relationship">
+           <option value="">Select</option>
+           <option value="father">Father</option>
+           <option value="brother">Brother</option>
+           <option value="other">Other</option>
+        </select>
+
+        <label for = "contact">Contact Number:</label>
+        <input type="text" required id= "contact"><br><br>
+        
+        <button type="save" >Save and Next</button><br><br>
+    </form ><br>
+
+    <form class="f">
+        <h3 class="he3"><span>Step 2 of 5:</span> Academic Details</h3>
+        
+        <label for = "education">Previous Education:</label>
+        <select required id="education">
+           <option value="">Select</option>
+           <option value="matric">Matric</option>
+           <option value="inter">Inter</option>
+        </select><br><br>
+        
+        <label for= "total marks">Total Marks:</label>
+        <input type="text" required id="total marks">
+
+        <label for= "obtained marks">Obtained Marks:</label>
+        <input type="text" required id="obtained marks">
+
+        <label for= "percentage" >Percentage%:</label>
+        <input type="text" required id="percentage"><br><br>
+
+        <button type="submit">Add</button><br><br>
+
+        <label for = "education">Previous Education:</label>
+        <select required id="education">
+           <option value="">Select</option>
+           <option value="matric">Matric</option>
+           <option value="inter">Inter</option>
+        </select><br><br>
+
+       <label for= "total marks">Total Marks:</label>
+        <input type="text" required id="total marks">
+
+        <label for= "obtained marks">Obtained Marks:</label>
+        <input type="text" required id="obtained marks">
+
+        <label for= "percentage" >Percentage%:</label>
+        <input type="text" required id="percentage"><br><br>
+
+        <button type="save">Save and Next</button><br><br>
+
+    </form><br>
+
+    <form class="f">
+        <h3  class="he3"><span>Step 3 of 5:</span> Programs</h3>
+
+        <label for="degreeProgram">Degree Program:</label>
+        <select required id="degreeProgram">
+            <option value="">Select</option>
+            <option value="BS">BS</option>
+            <option value="MS">MS</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+        
+        <label for="department">Department:</label>
+            <input type="checkbox" required id="department">CS
+            <input type="checkbox" required id="department">IT
+            <input type="checkbox" required id="department">SE
+            <input type="checkbox" required id="department">AI
+            <br><br>
+
+        <label for="shift">Shift (Morning/Evening):</label>
+        <select required id="shift">
+            <option value="">Select</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+        </select><br><br>
+
+         <button type="save">Save and Next</button><br><br>
+
+    </form><br>
+
+    <form class="f">
+        <h3  class="he3"><span>Step 4 of 5:</span> Required Documents</h3>
+        <label for= "profile">Profile image:</label>
+        <input type="file" required id="profile" class="doc"><br><br>
+
+        <label for= "front">CNIC front:</label>
+        <input type="file" required id="front" class="doc"><br><br>
+
+        <label for= "back">CNIC back:</label>
+        <input type="file" required id="back" class="doc"><br><br>
+
+        <label for= "domicile">Domicile:</label>
+        <input type="file" required id="domicile" class="doc"><br><br>
+
+        <label for= "matric">Matric result card:</label>
+        <input type="file" required id="matric" class="doc"><br><br>
+
+        <label for= "inter">Inter result card:</label>
+        <input type="file" required id="inter" class="doc"><br><br>
+    
+        <button type="save">Save and Next</button><br><br>
+
+    </form><br>
+        
+    <form class="f">
+        <h3  class="he3">Step 5 of 5: Declaration</h3>
+         <input type="checkbox" required id="agree">
+            <label for = agree>
+                I hereby declare that all the information provided by me in this registration form is true, complete, and correct to the best of my knowledge. I understand that if any information is found to be false or misleading, my admission may be cancelled.
+            </label><br><br>
+            
+    </form><br>
+    <button type="submit" id="btn">SUBMIT</button><br><br>
+    </form><br>
+</body>
+
+</html>
